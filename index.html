@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="toolBox">
+        <button class="btn" onclick="clearCanvas();">Clear</button>
+        <div id="colorBar">
+            <button id="red" onclick="setColor('red');"></button>
+            <button id="blue" onclick="setColor('blue');"></button>
+            <button id="black" onclick="setColor('black');"></button>
+        </div>
+    </div>
+    <div id="instr">
+        <p>Use [Caps Lock] to pen down/pen up</p>
+    </div>
+    <div id="canvasContainer">
+        <canvas id="canvasMain" width="800px" height="600px" style="border: 2px solid black"></canvas>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
